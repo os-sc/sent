@@ -9,8 +9,8 @@ static char *fontfallbacks[] = {
 #define FONTSZ(x) ((int)(10.0 * powf(1.1288, (x)))) /* x in [0, NUMFONTSCALES-1] */
 
 static const char *colors[] = {
-	"#000000", /* foreground color */
-	"#FFFFFF", /* background color */
+	"#f8f8f2", /* foreground color */
+	"#272822", /* background color */
 };
 
 static const float linespacing = 1.4;
@@ -18,6 +18,9 @@ static const float linespacing = 1.4;
 /* how much screen estate is to be used at max for the content */
 static const float usablewidth = 0.75;
 static const float usableheight = 0.75;
+
+/* height of the presentation progress bar */
+static const int progressheight = 5;
 
 static Mousekey mshortcuts[] = {
 	/* button         function        argument */
